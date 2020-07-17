@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <link href="styles.css" rel="stylesheet">
+
+</head>
+<body>
+
+  
+   <!--  <h1 @click="available = !available"  :class="{available:available}">Hello</h1>
+  -->
+
+  <!-- <button @click="error = !error">Toggle Error</button>
+  <button @click="success = !success">Success Button</button>
+  <p v-if="error">Toggled the Error</p>
+  <p v-else="success">Success</p> -->
+  
+  <!-- <ul>
+    <li v-for="(val,key) in keys">{{val}}-{{key}}</li>
+  </ul> -->
+
+  <!-- <div >
+    <p v-for="(item,key1) in keys">
+    {{ key1 }} {{ item }} </p>
+    <p>Testing</p>
+  </div>
+ </div> -->
+ <div id ="appjs">
+ <div id='bag' :class="{burst:ended}"></div>
+
+ <div id='bag-health'>
+   <div :style="{width:health+'%'}"> 
+   </div>
+ </div>
+
+
+ <div id='controls'>
+   <button @click="punch" v-show="!ended">Punch</button>
+   <button @click="restart">Restart</button>
+ </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
